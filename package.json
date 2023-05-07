@@ -1,0 +1,41 @@
+{
+  "name": "canada-map-solution",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18.14.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.16.5",
+    "typescript": "5.0.4",
+    "xo": "0.54.2"
+  },
+  "scripts": {
+    "solve": "tsc && node build/solution.js",
+    "lint": "xo"
+  },
+  "prettier": {
+    "bracketSpacing": true,
+    "printWidth": 160
+  },
+  "xo": {
+    "prettier": true,
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:@typescript-eslint/recommended-requiring-type-checking",
+      "plugin:unicorn/recommended"
+    ],
+    "rules": {
+      "default-case": "off",
+      "no-return-assign": "off",
+      "@typescript-eslint/explicit-function-return-type": "error",
+      "@typescript-eslint/naming-convention": "off",
+      "@typescript-eslint/no-implicit-any-catch": "off",
+      "@typescript-eslint/switch-exhaustiveness-check": "warn",
+      "import/no-extraneous-dependencies": "off",
+      "unicorn/prevent-abbreviations": "off"
+    }
+  }
+}
